@@ -22,52 +22,54 @@ export const Header = () => {
     
 
     return (
-        <AppBar>
-            <Toolbar>
-                <Container maxWidth="lg">
-                    <Box>
-                        <Grid container alignItems="center" justifyContent="space-between">
+        <div style={{flexGrow: 1}}>
+            <AppBar position="static">
+                <Toolbar>
+                    <Container maxWidth="lg">
+                        <Box>
+                            <Grid container alignItems="center" justifyContent="space-between">
 
-                        <Grid item>
-                            <Typography variant="h6" component="div" style={{ display: 'flex', alignItems: 'center' }}>
-                                <MonetizationOnIcon style={{ marginRight: '0.5rem' }} />
-                                <span>CryptoInfo</span>
-                            </Typography>
-                        </Grid>
+                            <Grid item>
+                                <Typography variant="h6" component="div" style={{ display: 'flex', alignItems: 'center' }}>
+                                    <MonetizationOnIcon style={{ marginRight: '0.5rem' }} />
+                                    <span>CryptoInfo</span>
+                                </Typography>
+                            </Grid>
 
-                        <Grid item>
-                            <TooltipButton title="Cryptocurrency" linkOptions={cryptoLinks}/>
-                            <TooltipButton title="Exchanges" linkOptions={cryptoLinks}/>
-                            <TooltipButton title="Community" linkOptions={cryptoLinks}/>
-                            <TooltipButton title="Products" linkOptions={cryptoLinks}/>
-                            <TooltipButton title="Learn" linkOptions={cryptoLinks}/>
-                        </Grid>
+                            <Grid item>
+                                <TooltipButton title="Cryptocurrency" linkOptions={cryptoLinks}/>
+                                <TooltipButton title="Exchanges" linkOptions={cryptoLinks}/>
+                                <TooltipButton title="Community" linkOptions={cryptoLinks}/>
+                                <TooltipButton title="Products" linkOptions={cryptoLinks}/>
+                                <TooltipButton title="Learn" linkOptions={cryptoLinks}/>
+                            </Grid>
 
-                        <Grid item>
-                            <IconButton>
-                                <DarkModeIcon />
-                            </IconButton>
-                            <IconButton>
-                                <StarBorderIcon />
-                            </IconButton>
-                            <IconButton>
-                                <AddchartIcon />
-                            </IconButton>
-                        </Grid>
+                            <Grid item>
+                                <IconButton>
+                                    <DarkModeIcon />
+                                </IconButton>
+                                <IconButton>
+                                    <StarBorderIcon />
+                                </IconButton>
+                                <IconButton>
+                                    <AddchartIcon />
+                                </IconButton>
+                            </Grid>
 
-                        <Grid item>
-                            <AutoComplete 
-                                id={"search-header"} 
-                                icon={<SearchIcon />} 
-                                size={"small"}
-                                label={""}
-                            />
-                        </Grid>
+                            <Grid item>
+                                <AutoComplete 
+                                    id={"search-header"} 
+                                    icon={<SearchIcon />} 
+                                    size={"small"}
+                                    label={""}
+                                />
+                            </Grid>
 
-                        </Grid>
-                    </Box> 
-                </Container>
-            </Toolbar>
-        </AppBar>
+                            </Grid>
+                        </Box> 
+                    </Container>
+                </Toolbar>
+            </AppBar>
+        </div>
     )
 }
