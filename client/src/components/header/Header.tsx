@@ -25,7 +25,7 @@ export const Header = () => {
         <div style={{flexGrow: 1}}>
             <AppBar position="static">
                 <Toolbar>
-                    <Container maxWidth="lg">
+                    <Container maxWidth="xl">
                         <Box>
                             <Grid container alignItems="center" justifyContent="space-between">
 
