@@ -27,7 +27,7 @@ export const CustomBreadcrumb: FC<CustomBreadcrumbProps> = ({ titles }) => {
                     aria-label="breadcrumb"
                 >
                     {titles.map((crumb) => (
-                        <Typography style={{fontSize: "11px"}} key="3" color="text.primary">
+                        <Typography style={{fontSize: "12px"}} key="3" color="text.primary">
                             {crumb}
                         </Typography>
                     ))}
