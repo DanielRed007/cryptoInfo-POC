@@ -9,6 +9,7 @@ import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import { Box, Grid, Container, Paper } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { CustomBreadcrumb } from '../../shared/widgets/customBreadcrumb/CustomBreadcrumb';
+import { CoinInfoButtonContainer } from './CoinInfoButtonContainer';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -51,6 +52,7 @@ export const InfoTop = () => {
                         <Box className={classes.bigBox}>
                             <Box sx={{ width: '100%', padding: "0.5rem" }}>
                                 <CustomBreadcrumb titles={breadcrumbTitles} />
+                                <CoinInfoButtonContainer coinTitle={"Bitcoin"} abbrev={"BTC"} />
                             </Box>
                         </Box>
                     </Grid>
