@@ -1,15 +1,11 @@
 
 import React from 'react';
 import { makeStyles } from '@mui/styles';
-import Breadcrumbs from '@mui/material/Breadcrumbs';
-import Typography from '@mui/material/Typography';
-import Link from '@mui/material/Link';
-import Stack from '@mui/material/Stack';
-import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import { Box, Grid, Container, Paper } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { CustomBreadcrumb } from '../../shared/widgets/customBreadcrumb/CustomBreadcrumb';
 import { CoinInfoButtonContainer } from './CoinInfoButtonContainer';
+import { TagListContainer } from './TagListContainer';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -23,14 +19,6 @@ const useStyles = makeStyles((theme) => ({
         border: "1px solid blue",
         height: '50%',
     },
-}));
-
-const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-    ...theme.typography.body2,
-    padding: theme.spacing(1),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
 }));
 
 export const InfoTop = () => {
@@ -53,6 +41,7 @@ export const InfoTop = () => {
                             <Box sx={{ width: '100%', padding: "0.5rem" }}>
                                 <CustomBreadcrumb titles={breadcrumbTitles} />
                                 <CoinInfoButtonContainer coinTitle={"Bitcoin"} abbrev={"BTC"} />
+                                <TagListContainer />
                             </Box>
                         </Box>
                     </Grid>
