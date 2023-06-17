@@ -1,30 +1,10 @@
 import React from 'react';
 import Stack from '@mui/material/Stack';
-import CurrencyBitcoinIcon from '@mui/icons-material/CurrencyBitcoin';
 import { CustomTag } from '../../shared/widgets/customTag/CustomTag';
+import { dataTagList } from '../../mock/tagList';
 
 export const TagListContainer = () => {
-    const dataTagList = [
-        {
-            size: "small",
-            variant: "filled",
-            label: "Rank #1",
-            showIcon: true,
-            icon: <CurrencyBitcoinIcon />
-        },
-        {
-            size: "small",
-            variant: "outlined",
-            label: "Coin",
-            showIcon: false,
-        },
-        {
-            size: "small",
-            variant: "outlined",
-            label: "On 7,234,221 watchlists",
-            showIcon: false
-        }
-    ];
+    
 
     return (
         <>
