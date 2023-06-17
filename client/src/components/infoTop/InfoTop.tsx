@@ -6,6 +6,7 @@ import { styled } from '@mui/material/styles';
 import { CustomBreadcrumb } from '../../shared/widgets/customBreadcrumb/CustomBreadcrumb';
 import { CoinInfoButtonContainer } from './CoinInfoButtonContainer';
 import { TagListContainer } from './TagListContainer';
+import { CoinInfoDropdownContainer } from './CoinInfoDropdownContainer';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -42,6 +43,7 @@ export const InfoTop = () => {
                                 <CustomBreadcrumb titles={breadcrumbTitles} />
                                 <CoinInfoButtonContainer coinTitle={"Bitcoin"} abbrev={"BTC"} />
                                 <TagListContainer />
+                                <CoinInfoDropdownContainer />
                             </Box>
                         </Box>
                     </Grid>

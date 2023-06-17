@@ -1,14 +1,15 @@
 import React, { FC } from 'react'
-import { LinkItem } from '../../../components/header/linkOptions';
 import { Button, Tooltip, List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
+import { LinkItem } from '../../../mock/linkOptions';
 
 
 interface TooltipButtonProps{
     title: string;
     linkOptions: any[];
+    buttonSize?: any;
 }
 
-export const TooltipButton: FC<TooltipButtonProps> = ({ title, linkOptions }) => {
+export const TooltipButton: FC<TooltipButtonProps> = ({ title, linkOptions, buttonSize }) => {
   return (
     <Tooltip
         title={
@@ -23,7 +24,7 @@ export const TooltipButton: FC<TooltipButtonProps> = ({ title, linkOptions }) =>
         }
         arrow
     >
-        <Button sx={{ ml: 1, textTransform: 'capitalize' }}>{ title }</Button>
+        <Button size={buttonSize ? buttonSize : "medium"} sx={{ ml: 1, textTransform: 'capitalize' }}>{ title }</Button>
     </Tooltip>
   )
 }

@@ -16,7 +16,7 @@ import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import { AutoComplete } from "../../shared/widgets/autocomplete/AutoComplete";
 import { TooltipButton } from "../../shared/widgets/tooltipButton/TooltipButton";
-import { cryptoLinks } from "./linkOptions";
+import { cryptoLinks } from '../../mock/linkOptions';
 
 export const Header = () => {
     
