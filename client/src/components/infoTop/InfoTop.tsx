@@ -7,6 +7,7 @@ import { CustomBreadcrumb } from '../../shared/widgets/customBreadcrumb/CustomBr
 import { CoinInfoButtonContainer } from './CoinInfoButtonContainer';
 import { TagListContainer } from './TagListContainer';
 import { CoinInfoDropdownContainer } from './CoinInfoDropdownContainer';
+import { SmallTagContainer } from './SmallTagContainer';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -44,6 +45,7 @@ export const InfoTop = () => {
                                 <CoinInfoButtonContainer coinTitle={"Bitcoin"} abbrev={"BTC"} />
                                 <TagListContainer />
                                 <CoinInfoDropdownContainer />
+                                <SmallTagContainer />
                             </Box>
                         </Box>
                     </Grid>

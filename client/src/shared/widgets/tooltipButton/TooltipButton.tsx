@@ -4,12 +4,13 @@ import { LinkItem } from '../../../mock/linkOptions';
 
 
 interface TooltipButtonProps{
-    title: string;
-    linkOptions: any[];
-    buttonSize?: any;
+  title: string;
+  linkOptions: any[];
+  buttonSize?: any;
+  buttonVariant?: any;
 }
 
-export const TooltipButton: FC<TooltipButtonProps> = ({ title, linkOptions, buttonSize }) => {
+export const TooltipButton: FC<TooltipButtonProps> = ({ title, linkOptions, buttonSize, buttonVariant }) => {
   return (
     <Tooltip
         title={
@@ -24,7 +25,11 @@ export const TooltipButton: FC<TooltipButtonProps> = ({ title, linkOptions, butt
         }
         arrow
     >
-        <Button size={buttonSize ? buttonSize : "medium"} sx={{ ml: 1, textTransform: 'capitalize' }}>{ title }</Button>
+        <Button 
+          size={buttonSize ? buttonSize : "medium"}
+          variant={buttonVariant ? buttonVariant : "outlined"} 
+          sx={{ ml: 1, textTransform: 'capitalize' }}
+        >{ title }</Button>
     </Tooltip>
   )
 }
