@@ -32,13 +32,7 @@ export const InfoTop = () => {
 
                     <Grid item xs={4} sx={{height: "370px"}}>
                         <Box>
-                            <Box sx={{ width: '100%', padding: "0.5rem" }}>
-                                <CustomBreadcrumb titles={breadcrumbTitles} />
-                                <CoinInfoButtonContainer coinTitle={"Bitcoin"} abbrev={"BTC"} />
-                                <TagListContainer />
-                                <CoinInfoDropdownContainer />
-                                <SmallTagContainer />
-                            </Box>
+                            
                         </Box>
                     </Grid>
 
@@ -56,13 +50,7 @@ export const InfoTop = () => {
 
                     <Grid item xs={4} sx={{height: "370px"}}>
                         <Box>
-                            <Box sx={{ width: '100%', padding: "0.5rem" }}>
-                                <CustomBreadcrumb titles={breadcrumbTitles} />
-                                <CoinInfoButtonContainer coinTitle={"Bitcoin"} abbrev={"BTC"} />
-                                <TagListContainer />
-                                <CoinInfoDropdownContainer />
-                                <SmallTagContainer />
-                            </Box>
+                            
                         </Box>
                     </Grid>
 
