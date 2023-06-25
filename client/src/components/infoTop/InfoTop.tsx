@@ -12,15 +12,7 @@ import { SmallTagContainer } from './SmallTagContainer';
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
-    },
-    bigBox: {
-        border: "1px solid blue",
-        height: '100%',
-    },
-    smallBox: {
-        border: "1px solid blue",
-        height: '50%',
-    },
+    }
 }));
 
 export const InfoTop = () => {
@@ -29,17 +21,17 @@ export const InfoTop = () => {
     const breadcrumbTitles = ["CryptoCurrencies", "Coin", "Bitcoin"];
 
     return (
-        <div style={{flexGrow: 1,height: "30%"}}>
+        <div style={{flexGrow: 1,height: "20%", marginTop: "2rem"}}>
             <Container maxWidth="xl">
                 <Box >
                     <Grid sx={{
                         width: "100%",
-                        height: "570px"
+                        height: "370px"
                     }} 
                     container alignItems="center" justifyContent="space-between">
 
-                    <Grid item xs={4} sx={{height: "570px"}}>
-                        <Box className={classes.bigBox}>
+                    <Grid item xs={4} sx={{height: "370px"}}>
+                        <Box>
                             <Box sx={{ width: '100%', padding: "0.5rem" }}>
                                 <CustomBreadcrumb titles={breadcrumbTitles} />
                                 <CoinInfoButtonContainer coinTitle={"Bitcoin"} abbrev={"BTC"} />
@@ -50,18 +42,28 @@ export const InfoTop = () => {
                         </Box>
                     </Grid>
 
-                    <Grid item sx={{height: "570px"}} xs={8}>
-                        <Grid item>
-                            <Box sx={{height: "285px"}} className={classes.smallBox}>
-                                Box1   
+                    <Grid item xs={4} sx={{height: "370px"}}>
+                        <Box>
+                            <Box sx={{ width: '100%', padding: "0.5rem" }}>
+                                <CustomBreadcrumb titles={breadcrumbTitles} />
+                                <CoinInfoButtonContainer coinTitle={"Bitcoin"} abbrev={"BTC"} />
+                                <TagListContainer />
+                                <CoinInfoDropdownContainer />
+                                <SmallTagContainer />
                             </Box>
-                        </Grid>
+                        </Box>
+                    </Grid>
 
-                        <Grid item>
-                            <Box sx={{height: "285px"}} className={classes.smallBox}>
-                                Box2 
+                    <Grid item xs={4} sx={{height: "370px"}}>
+                        <Box>
+                            <Box sx={{ width: '100%', padding: "0.5rem" }}>
+                                <CustomBreadcrumb titles={breadcrumbTitles} />
+                                <CoinInfoButtonContainer coinTitle={"Bitcoin"} abbrev={"BTC"} />
+                                <TagListContainer />
+                                <CoinInfoDropdownContainer />
+                                <SmallTagContainer />
                             </Box>
-                        </Grid>
+                        </Box>
                     </Grid>
 
                 </Grid>
